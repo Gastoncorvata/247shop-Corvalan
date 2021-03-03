@@ -10,7 +10,7 @@ function App() {
 				<p className="App-link"> Un E-commerce para usar en Kioskos automatizados y roboticos.</p>
 				<a
 					className="App-link"
-					href="https://reactjs.org"
+					href="https://github.com/Gastoncorvata/247shop"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
