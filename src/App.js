@@ -1,22 +1,12 @@
-import logo from './logo.svg';
+import NavBar from './components/NavBar.js'
+import './index.css';
 import './App.css';
 
 function App() {
-  return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>Shop</p>
-				<p className="App-link"> Un E-commerce para usar en Kioskos automatizados y roboticos.</p>
-				<a
-					className="App-link"
-					href="https://github.com/Gastoncorvata/247shop"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					GitHub Gastoncorvata
-				</a>
-			</header>
+	return (
+		<div>
+			<NavBar/>
+			<p className="text-2xl font-bold leading-relaxed mt-0 mb-4 text-indigo-500 content-center flex justify-center ">Este es el desafio de NavBar Component</p><p className="flex justify-center text-base font-ligth leading-relaxed mt-0 mb-4 text-blue-500 content-center animate-ping">By Gaston Corvalan</p>
 		</div>
 	);
 }
