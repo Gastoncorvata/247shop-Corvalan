@@ -27,13 +27,28 @@ export default function Navbar({ fixed }) {
 						<li className="nav-item">
 						<a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#instagram">
 							<i className="fab fa-instagram text-lg leading-lg text-white opacity-75" />
-							<span className="ml-2">Siguenos</span>
+							<span className="ml-2"></span>
 						</a>
 						</li>
 							<li className="nav-item">
 						<a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#facebook">
 							<i className="fab fa-facebook text-lg leading-lg text-white opacity-75" />
-							<span className="ml-2">Comparte</span>
+							<span className="ml-2"></span>
+						</a>
+						</li>
+						<li className="nav-item">
+						<a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#facebook">
+							<span className="ml-2">Productos</span>
+						</a>
+						</li>
+							<li className="nav-item">
+						<a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#facebook">
+							<span className="ml-2">Marcas</span>
+						</a>
+						</li>
+							<li className="nav-item">
+						<a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#facebook">
+							<span className="ml-2">Consultas</span>
 						</a>
 						</li>					
 					</ul>
