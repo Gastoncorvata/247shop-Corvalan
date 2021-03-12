@@ -1,5 +1,10 @@
 import React from "react";
+import ItemCount from "../ItemCount"
 
-export default function ItemListContainer(greeting) {
-  return <div className="text-xl italic font-black text-purple-700 text-center" >Aca van los ITEMS</div>;
+export default function ItemListContainer() {
+  return (
+    <div className="container ">
+      <ItemCount stock="9" inicio="0" />
+    </div>
+  );
 }

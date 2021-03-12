@@ -31,25 +31,23 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#cart"
+                  href="#golosinas"
                 >
-                  <CartWidget />
-                </a>
-              </li>
-              
-              
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#Dulces"
-                >
-                  <i className="fas fa-candy-cane text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Dulces</span>
+                  <i className="fas fa-candy-cane text-lg leading-lg text-white opacity-75"></i><span className="ml-2">golosinas</span>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href="#snack"
+                >
+                  <i className="fas fa-pizza-slice text-lg leading-lg text-white opacity-75"></i><span className="ml-2">snack</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="#bebidas"
                 >
                   <i className="fas fa-wine-bottle text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Bebidas</span>
                 </a>
@@ -57,9 +55,9 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href="#cart"
                 >
-                  <i className="fas fa-pizza-slice text-lg leading-lg text-white opacity-75"></i><span className="ml-2">salados</span>
+                  <CartWidget />
                 </a>
               </li>
             </ul>
