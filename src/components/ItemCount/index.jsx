@@ -1,12 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 
 export function ItemCount ({stock, inicio, onAdd}){
-    const [count, setCount] = useState(Number(inicio));
-
-    useEffect(() => {
-        setCount(Number(inicio));
-        return;
-    }, [inicio]);
+    const [count, setCount] = useState (inicio);
 
     const agregar = () => {
         setCount (count +1);
