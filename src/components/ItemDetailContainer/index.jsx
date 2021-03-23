@@ -5,7 +5,7 @@ const getItem = () => {
     return new Promise((resolve)=>{
         setTimeout(()=>{resolve({
             titulo:"Producto",
-            presio: 144,
+            precio: 144,
             descripcion: "Un producto seleccionado con los mas altos estandares de calidad",
             img:""
         })},2000)
