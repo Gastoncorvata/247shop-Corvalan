@@ -4,9 +4,9 @@ import ItemDetalil from "../ItemDetail"
 const getItem = () => {
     return new Promise((resolve)=>{
         setTimeout(()=>{resolve({
-            title:"un Item",
-            price: 25.5,
-            description: "Un muy lindo item ",
+            titulo:"Producto",
+            presio: 144,
+            descripcion: "Un producto seleccionado con los mas altos estandares de calidad",
             img:""
         })},2000)
     })
