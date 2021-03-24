@@ -1,12 +1,16 @@
-import React from "react"
+import React from 'react'
+import {ItemCount} from "../ItemCount";
+
 
 export default function ItemDetail({ item }) {
 
-    return  
-        <div>
-            <img src={item?.foto} alt="" className="w-full object-cover object-center rounded-lg shadow-md"/>
-            <h2 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">{item?.titulo}</h2>
-            <p className="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">{item?.descripcion}</p>
-            <div className="text-gray-600 text-sm">${item?.precio}</div>
+    return (
+        <div className = "wrapper w-3/5 justify-center text-center antialiased grid">
+            <img src={item?.img} alt="" className="w-auto object-cover object-center rounded-lg shadow-md justify-center "/>
+            <h2 className="relative px-4 text-800 px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">{item?.title}</h2>
+            <h4 className="bg-teal-200 text-teal-800 px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">{item?.description}</h4>
+            <div className="text-black font-extrabold text-lg">${item?.price}</div>
+            <ItemCount stock={10} inicio={1}/>
         </div>
+    );
 }

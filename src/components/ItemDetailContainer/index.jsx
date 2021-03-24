@@ -1,13 +1,15 @@
-import React, {useState, useEffect} from "react"
-import ItemDetalil from "../ItemDetail"
+import React, {useState, useEffect} from 'react'
+import ItemDetail from '../ItemDetail'
 
-const getItem = () => {
+
+const getItems = () => {
     return new Promise((resolve)=>{
         setTimeout(()=>{resolve({
-            titulo:"Producto",
-            precio: 144,
-            descripcion: "Un producto seleccionado con los mas altos estandares de calidad",
-            img:""
+            title:"Producto Artesanal",
+            price: 199.99,
+            description: "Chocolate de la mejor calidad 100% cacao ",
+            img:"http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c0d1.png"
+
         })},2000)
     })
 }
@@ -21,4 +23,5 @@ export default function ItemDetailContainer() {
 
     
     return <ItemDetail item={item} />
-}
+    }
+
