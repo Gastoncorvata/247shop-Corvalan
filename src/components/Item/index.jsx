@@ -6,9 +6,9 @@ export const Item= ({ item }) => {
 
     return(
     <div className = "wrapper bg-gray-100 antialiased text-gray-900">
-        <div className="m-4">
+        <div className="m-4 whitespace-no-wrap">
         <Link to={`/item/${item.id}`}>
-            <img src= {item.img} alt="Item" className="w-full object-cover object-center rounded-lg shadow-md"/>
+            <img src= {item.img} alt="Item" className="w-1/2 object-cover object-center rounded-lg shadow-md"/>
             <div className="relative px-4 -mt-16  ">
                 <div className="bg-purple-200 p-6 rounded-lg shadow-lg">
                     <div className="flex items-baseline">

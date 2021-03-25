@@ -6,7 +6,7 @@ export const ItemList = ({items=[]}) => {
 
 
     return (
-        <div className="flex">
+        <div className="flex justify-center">
             {items.map(item => <Item item={item}/> )}
         </div>
     )
