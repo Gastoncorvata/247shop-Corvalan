@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import ItemDetail from '../ItemDetail'
+import { useParams } from "react-router-dom";
 
-
-const getItems = () => {
+const getItems = (id) => {
     return new Promise((resolve)=>{
         setTimeout(()=>{resolve({
             title:"Producto Artesanal",
             price: 199.99,
-            description: "Chocolate de la mejor calidad 100% cacao ",
-            img:"http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c0d1.png"
+            description: " Este Item esta etiquetado como Item:" + id,
+            img:"https://keshetcacao.com/wp-content/uploads/2019/11/taza.png",
 
         })},2000)
     })
@@ -16,12 +16,17 @@ const getItems = () => {
 
 export default function ItemDetailContainer() {
     const [item, setItem] = useState(null)
+    
+    const {itemId} = useParams()
+
     useEffect(() => {
-        getItems().then((res)=> setItem(res))
+        getItems(itemId).then((res)=> setItem(res))
         return;
-    }, [])
+    }, [itemId])
 
     
-    return <ItemDetail item={item} />
+    return <>
+    <h2 className="text-4xl text-center text-amber-500"> Este es el Item {itemId}</h2>
+        <ItemDetail item={item} /></>
     }
 

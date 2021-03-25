@@ -1,11 +1,14 @@
 import React from "react"
-import {ItemCount} from "../ItemCount"
+import { Link } from "react-router-dom";
+
+
 export const Item= ({ item }) => {
 
     return(
     <div className = "wrapper bg-gray-100 antialiased text-gray-900">
         <div className="m-4">
-            <img src= {item.foto} alt="Item" className="w-full object-cover object-center rounded-lg shadow-md"/>
+        <Link to={`/item/${item.id}`}>
+            <img src= {item.img} alt="Item" className="w-full object-cover object-center rounded-lg shadow-md"/>
             <div className="relative px-4 -mt-16  ">
                 <div className="bg-purple-200 p-6 rounded-lg shadow-lg">
                     <div className="flex items-baseline">
@@ -13,14 +16,14 @@ export const Item= ({ item }) => {
                             Nuevo
                         </span>
                         <div className="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-                            {item.marca}  &bull; {item.descripcion}
+                            {item.marca}  &bull; {item.description}
                         </div>
                     </div>
                     <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                        {item.titulo}
+                        {item.title}
                     </h4>
                     <div className="mt-1">
-                        {item.precio}
+                        {item.price}
                         <span className="text-gray-600 text-sm">
                             $
                         </span>
@@ -35,8 +38,8 @@ export const Item= ({ item }) => {
                     </div>  
                 </div>
             </div>
+            </Link>
         </div>
-        <ItemCount stock={item.stock} inicio={1} />
     </div>
     )
 }
