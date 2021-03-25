@@ -17,7 +17,7 @@ function App() {
 						<Home />
 					</Route>
 
-					<Route path="/categority/:categorityId">
+					<Route path="/category/:categoryId">
 						<ItemListContainer greeting="Bienvenidos"/>
 					</Route>
 
