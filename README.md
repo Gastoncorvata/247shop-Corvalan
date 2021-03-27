@@ -1,6 +1,6 @@
 [24]7 shop
 
-Proyecto realizado en ReactJS utilizando Create React App.
+Proyecto realizado en ReactJS utilizando Create React App (https://github.com/facebook/create-react-app)
 
 Este proyecto tiene la finalidad de ser usado como Ecommerce de productos para un kiosko automatico, 
 siendo este proyectado en una terminal tactil manejada por el usuario dentro del Kiosko.
@@ -19,6 +19,9 @@ Seleccionar y modificar la cantidad de producto para agregar al carrito (ItemCou
 
 [24]7 Shop by Gaston Corvalan.
 
+En consola:
 Recordá instalar todas las dependencias del proyecto ejecutando el comando: npm install
+(https://docs.npmjs.com/cli/v7/commands/npm-install) => info.
 
 Luego ejecuta el comando: npm start
+(https://docs.npmjs.com/cli/v7/commands/npm-start) => info.
