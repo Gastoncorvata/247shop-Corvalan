@@ -40,7 +40,7 @@ export function ItemCount ({stock, inicio, onAdd}){
             onClick= {onAdd}
             className=" m-2 text-orange-500 bg-transparent border border-solid border-orange-500 hover:bg-orange-500 hover:text-white active:bg-orange-600 font-bold uppercase px-8 py-1 rounded-full outline-none focus:outline-none mr-1 mb-1"
             type="button" 
-            style={{ transition: "all .15s ease" }}>
+            style={{ transition: "all .45s ease" }}>
                 <i className="fas fa-shopping-cart"> Agregar</i> 
             </button>
         </div>
