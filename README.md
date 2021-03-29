@@ -25,3 +25,7 @@ Recordá instalar todas las dependencias del proyecto ejecutando el comando: npm
 
 Luego ejecuta el comando: npm start
 (https://docs.npmjs.com/cli/v7/commands/npm-start) => info.
+
+estilos con tailwind css:
+npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+(https://tailwindcss.com/docs/guides/create-react-app) => info.
