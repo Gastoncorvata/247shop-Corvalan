@@ -29,10 +29,10 @@ export function ItemCount ({stock, inicio, onAdd}){
             <button 
             disabled={count >= stock}
             onClick={agregar}
-            className="text-green-500 bg-transparent  hover:bg-green-500 hover:text-white active:bg-green-600 font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
+            className="text-green-500 bg-transparent  hover:bg-emerald-500 hover:text-white active:bg-green-600 font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1"
             type="button" 
             style={{ transition: "all .15s ease" }}>
-                <i className="far fa-plus-square"></i> 
+                <i className="far fa-plus-square"></i>
             </button>
         </div>
             <button 
